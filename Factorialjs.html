@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+       
+        function fact()
+        {
+            var a=document.getElementById("a").value;
+        var c=1;
+        var d=parseInt(a);
+            if(d==0)
+            document.getElementById("b").value="1";
+            else if(a>0)
+            {
+            for(var b=2;b<=d;b++)
+                c=c*b;
+                document.getElementById("b").value=c;
+            }
+            
+        }
+      
+    </script>
+</head>
+<body>
+    <div>
+    <label >Enter the number</label>
+    <input type="text" id="a" >
+    </div>
+    <div>
+        <input type="button" value="Find" onclick="fact()">
+    </div>
+    <div>
+        <label>Factorial of given number</label>
+        <input type="text" id="b">
+    </div>
+</body>
+</html>
